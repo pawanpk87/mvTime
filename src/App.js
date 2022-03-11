@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
 import "./App.scss";
 import "./assets/boxicons-2.1.1/boxicons-2.1.1/css/boxicons.min.css";
 import "swiper/swiper-bundle.css";
@@ -9,7 +9,7 @@ import Footer from "./components/footer/Footer";
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <RoutesALL />
       <Routes>
         <Route
@@ -22,7 +22,7 @@ function App() {
           }
         />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
